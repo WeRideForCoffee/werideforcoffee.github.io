@@ -2,108 +2,126 @@
 <html>
 <head>
 	<title>WeRideFor.Coffee</title>
-	<link rel="icon" href="images/favicon.ico">
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" charset="text/html;charset=utf-8" />
+	<meta name="description" content="An old school personal website for WeRideForCoffee, with blog posts, projects and the latest developments in her professional works." />
+	<meta name="google" content="" />
+	<meta name="robots" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- Since all my images are on the same site as the page, is this nessesary or even useful? -->
+	<link rel="dns-prefetch" href="//weridefor.coffee" />
+
+	<link rel="stylesheet" href="style.css">
+	<link rel='stylesheet' href='typefaces/raleway/raleway.css' />
+<!-- Unsure if "preload" will work for the above, old command kept if needed after testing:
 	<link rel="stylesheet" href="typefaces/raleway/raleway.css">
+-->
+
+	<link rel="icon" href="images/favicon.ico">
+	
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+	
 <!--<link rel="stylesheet" href="typefaces/josefinsans/josefinsans.css">-->
-<style>
-	body, h1 {font-family: "Raleway", sans-serif}
-	body, html {
-		background-color: #1d2229;
-		height: 100%;
-	}
-	footer {
-		position: sticky;
-		top: 100%;
-	}
+
+<!--
+Temporarily taking out the background image while fleshing out web-v1
 	.bgimg {
 		background-image: url('images/background.webp');
 		min-height: 100%;
 		background-position: center;
 		background-size: cover;
 	}
-	.fadeout {
-		-webkit-mask-image: linear-gradient(rgba(1,1,1,0.7), transparent);
-	  mask-image: linear-gradient(rgba(1,1,1,0.7), transparent);
+	body, h1 {font-family: "Raleway", sans-serif}
+	body, html {
+		background-color: #1d2229;
+		height: 100%;
 	}
-	.logoFloat {
-		float:left; width:22px; height:22px; margin-right:8px; margin-top:5px;
-	}
-	.mainMargins {
-		margin: auto;
-	  	max-width: 920px
-	}
-	/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#skip_links */
-	.skip-link {
-	  position: absolute;
-	  top: -3em;
-	  background: #fff;
-	}
-	.skip-link:focus {
-	  top: 0;
-	}
-	@media only screen and (max-width: 1200px) {
-	  .mainMargins {
-	  	width: 70%;
-	  }
-	}
-	@media only screen and (max-width: 900px) {
-	  .mainMargins {
-	  	width: 80%;
-	  }
-	}
-	@media only screen and (max-width: 768px) {
-	  .mainMargins {
-	  	width: 100%;
-	  }
-	}
-</style>
+-->
+<!--
+Tags that I was using from W3 that I need to replicate (9:45pm 20/04)
+	w3-text-white
+	w3-border-white
+	w3-center
+	w3-large
+	w3-xlarge
+	w3-padding-large
+	w3-animate-opacity
+	w3-jumbo w3-animate-top
+	-->
 </head>
 <body class="bgimg w3-text-white">
 <a href="#content" class="skip-link">Skip to main content</a>
 <header>
-	<div class="w3-padding-large w3-xlarge"style="font-family:Raleway">
+	<div style="font-family:Raleway;color:#EEE;position: absolute;">
 		<u class="w3-monospace">weridefor.coffee</u><br>
 	</div>
 </header>
 <!-- what does w3-display-container even do? -->
-<div id="content" class="w3-animate-opacity w3-padding-large mainMargins">
+<div class="mainMargins">
 <!-- Main Flow -->
-	<div class="w3-center">
-		<h1 class="w3-jumbo w3-animate-top"><b>COMING SOON<u><sup>ISH</sup></u></b></h1>
-		<hr class="w3-border-white" style="margin:auto;width:100%;border-width:4px;">
-		<p class="w3-large w3-center">Apps, Games, Videos and the liberal application of <i>creative</i> time management.</p>
+	<div class="centred">
+		<div>
+			<!--<h1 class="w3-animate-top"><b>WE RIDE FOR COFFEE</b></h1>-->
+			<img src="images/website_headline_wide.webp" alt="We Ride For Coffee logo of the letters W R F C arranged as an ambigram, with We Ride For Coffee spelt out over the top in plain text" width="384" height="105">
+		</div>
+		<!--<div id="Links" class="topNavigationLinks">
+			<a href="" class="topNavigationLink">About</a>
+			<a href="" class="topNavigationLink">Home</a>
+			<a href="" class="topNavigationLink">Blog</a>
+		</div>-->
+		<hr style="margin:auto;border: 2px solid #DDD;">
+	</div>
+	<div class="callout">
+		<img src="images/favicon.ico" alt="" width="24" height="24" style="float:left;margin-top:20px;margin-right:8px;text-align:center;">
+		<h3>Under Construction!</h3>
+		<p>As part of a greater effort to get the ball rolling as soon as possible and to start sharing a decade of previously private projects, this site should be considered a <b>work in progress</b>.</p>
+	</div>
+	<div id="content">
+		<h2>My alias is <i>WeRideForCoffee</i>, and welcome to my personal site!</h2>
+		<p><b>Here you will find a cross-section of my passions and creations</b>, you can expect a wide variety of articles, tutorials, more personal blog posts and musings, videos, video game development and the occasional free treat be it a custom model for 3D printing through to source code I've put together for our shared benefit.</p>
+		<ul>
+			<li><b>Video game development and creation</b>, both shorter form Game Jam or personal experiments and on major titles I've been working on and cannot wait to share with you!</li>
+			<br>
+			<li><b>Application development</b>, especially with a focus on creative and productive tools.</li>
+			<br>
+			<li><b>Historical European Martial Arts</b>, HEMA for short. Sword fighting based on historical records and manuals, practiced and developed as a martial art... and tremendous fun!</li>
+			<br>
+			<li>Occasional game play footage and series, with a <b>focus on creating broader narratives through game play</b> and the video game modding scene overall.</li>
+		</ul>
+		<div style="background-color:#0d0c0c;background-image: url('images/website-bg-neon.webp');background-repeat: no-repeat;background-position:right;">
+		<ul style="list-style-type:none;padding:12px 18px;background-image:linear-gradient(to right,rgba(0,0,0,1.0),rgba(0,0,0,0.95),rgba(0,0,0,0.0));">
+			<li style="height:32px;"><b><a href="https://ko-fi.com/werideforcoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/kofi-icon.svg" alt="My KoFi Link">ko-fi.com/werideforcoffee</a></b></li>
+			<li style="height:32px"><b><a href="https://werideforcoffee.itch.io/" referrerpolicy="origin"><img class="logoFloat" src="images/logos/itchio-textless-black.svg" alt="My Itch.IO Page Link">werideforcoffee.itch.io</a></b></li>
+			<li style="height:32px"><b><a href="https://www.youtube.com/channel/UCUXmMhXjP84PmRQP4lllQpQ" referrerpolicy="origin"><img class="logoFloat" src="images/logos/youtube-full-color.svg" alt="My Youtube Link">WeRideForCoffee on YouTube</a></b></li>
+			<li style="height:32px"><b><a href="https://www.twitch.tv/werideforcoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/twitch-full-color.svg" alt="My Twitch Link">twitch.tv/werideforcoffee</a></b></li>
+			<li style="height:32px"><b><a href="https://github.com/WeRideForCoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/github-invertocat.svg" alt="My Github Link">github.com/WeRideForCoffee</a></b></li>
+		</ul>
+		</div>
+		<p>This is hardly an exhaustive list, but to whet your appetite please enjoy a *sneak peak* at a few of my major projects currently underway:</p>
+		<img src="images/project_preview_wide.webp" alt="Side by side panel of screenshots showcasing previews of the Stranded Sky game project and RTX Remix modded Morrowind and Oblivion" width="1024" height="300" class="fadeout" style="max-width:1024px;max-height:300px;height:auto;width:100%">
+		<br>
+		<br>
+		<h2>Stranded Sky - Multiplayer Voxel Sandbox:</h2>
+			<p>My take on the voxel sandbox complete with physics-driven floating islands, movement and vehicles, extensive modding support built into the foundations and enhanced graphical capabilities as the cherry on top.</p>
+			<p>My current efforts are still focused on building a stable mechanical foundation for the game in what precious time I can put aside for it, but any and all updates <i>will</i> be posted here!</p>
+			<img src="images/stranded_sky_wip_wide.webp" alt="Two screenshots of the Stranded Sky game project, one depicting a floating voxel island and the other, the game's physics based movement" width="1024" height="300" style="max-width:1024px;max-height:300px;height:auto;width:100%">
+			<br>
+			<br>
+		<h2>Custom HEMA Gauntlets</h2>
+			<p>Frustrated by the lack of options in Australia, and brutal overseas shipping and currency conversion costs I have been developing 5-finger articulated armoured gauntlets for use with sword fighting, with a focus on providing both excellent protection and the capability to provide <i>entirely custom sizing</i>.</p>
+			<p>For the time being, I don't have any compelling sizzle-reel screenshots for this project, but of the three projects presented here this is the one I'll be focusing on next, so stay tuned!</p>
+			<br>
+		<h2>RTX Remix Modding - Morrowind, Oblivion, Fallout 3 and Fallout New Vegas</h2>
+			<p>Driven by my passion for gaming and modding, I have been working to integrate NVIDIA's RTX Remix fully path traced renderer with many classic games from the early and mid 2000s, including every Bethesda Softworks title from (and including) Morrowind all the way to technically supporting the <i>original</i> version of Skyrim!</p>
+			<p>To showcase this, I'm considering putting together a narrative driven video series centered on the Fallout New Vegas DLC <i>Dead Money</i>... and I think it will be something special, but you'll have to stick around to find out.</p>
+			<img src="images/wrfc_morrowind_khuul.webp" alt="Screenshot of the costal village of Khuul from Morrowind with path traced lighting" width="1023" height="769" style="max-width:1023px;max-height:769px;height:auto;width:100%">
+			<br>
 	</div>
 	<div>
-		<p class="w3-large">Current projects include a new spin on a classic voxel game, a papercraft application, stream overlay software and modifying Bethesda games starting at Oblivion through to the original launch version of Skyrim to feature fully path traced lighting!</p>
-		<p class="w3-large fadeout" style="margin-left:32px"><i>
-			and Mods,<br>
-			and Streams,<br>
-			and Blogs,<br>
-			and probably too much Minecraft,<br>
-			and some Community too! We have a place to share pet pictures!<br>
-			and Art,<br>
-			and ...
-		</i></p>
-		<div class="w3-large">
-			<p>Projects heavily feature the <a href="https://godotengine.org/">Godot Game Engine</a> (and yes, that includes the applications and game modding!) and I plan to make some tutorials available as I go featuring some of the more outlandish things you can achieve with it, so stay tuned on my socials or bookmark this page for more info on that as it occurs.</p>
-			<ul>
-			<li><a href="https://ko-fi.com/werideforcoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/kofi-icon.svg" alt="Ko Fi Site Link">ko-fi.com/werideforcoffee</a></li>
-			<li><a href="https://www.youtube.com/channel/UCUXmMhXjP84PmRQP4lllQpQ" referrerpolicy="origin"><img class="logoFloat" src="images/logos/youtube-full-color.svg" alt="Youtube Site Link">WeRideForCoffee on YouTube</li>
-			<li><a href="https://www.twitch.tv/werideforcoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/twitch-full-color.svg" alt="Ko Fi Site Link">twitch.tv/werideforcoffee</a></li>
-			<li><a href="https://werideforcoffee.itch.io/" referrerpolicy="origin"><img class="logoFloat" src="images/logos/itchio-textless-black.svg" alt="Ko Fi Site Link">werideforcoffee.itch.io</a></li>
-			<li><a href="https://github.com/WeRideForCoffee" referrerpolicy="origin"><img class="logoFloat" src="images/logos/github-invertocat.svg" alt="Ko Fi Site Link">github.com/WeRideForCoffee</a></li>
-			</ul>
-		</div>
+		<p>Projects heavily feature the <a href="https://godotengine.org/">Godot Game Engine</a> and I plan to make some tutorials available as I go featuring some of the more outlandish things you can achieve with it, as they come available you will also be able to find them here!</p>
+		<br>
 	</div>
-<!-- W3 Footer -->
+<!-- Footer -->
 </div>
-<footer>
-	<div class="w3-padding-large">
-		Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-	</div>
-</footer>
 </body>
 </html>
